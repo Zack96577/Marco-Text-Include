@@ -8,3 +8,7 @@
 		#error could not locate a_samp.inc file
 	#endif
 #endif
+
+/*  Marco GameText V1.0.1  */
+
+#include <a_samp>
