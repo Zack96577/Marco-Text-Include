@@ -12,3 +12,7 @@
 /*  Marco GameText V1.0.1  */
 
 #include <a_samp>
+
+new PlayerText:GameText1[MAX_PLAYERS];
+new PlayerText:GameText2[MAX_PLAYERS];
+new PlayerText:GameText3[MAX_PLAYERS];
