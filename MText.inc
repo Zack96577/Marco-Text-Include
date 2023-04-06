@@ -74,7 +74,7 @@ stock GameTextSetString(playerid, text[], type)
         return 1;
 }
 
-stock ShowMarcoTextDraw(playerid, type)
+stock ShowGameText(playerid, type)
 {
         if(type == 1) PlayerTextDrawShow(playerid, GameTextTd[playerid][0]);
         else if(type == 2) PlayerTextDrawShow(playerid, GameTextTd[playerid][1]);
@@ -87,7 +87,7 @@ stock PlayerGameTextShow(playerid, text[], type, time)
         new default = time*1000;
         CreatePlayerGameText(playerid);
         GameTextSetString(playerid, text, type);
-        ShowMarcoTextDraw(playerid, type);
+        ShowGameText(playerid, type);
 
         SetTimerEx("PlayerGameTextHide", default, false, "i", playerid); 
         return 1;
